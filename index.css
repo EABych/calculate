@@ -1,0 +1,115 @@
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url(img/back.jpg);
+
+    -webkit-user-select: none;
+    /* user-select -- это нестандартное свойство */
+
+    -moz-user-select: none;
+    /* поэтому нужны префиксы */
+
+    -ms-user-select: none;
+}
+
+.main_conteiner {
+    width: 320px;
+    height: 643px;
+    background-image: url(img/background.png);
+    background-size: contain;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 5px;
+    box-shadow: 15px 19px 56px 9px #2a2a2a;
+
+
+}
+
+input {
+    text-align: end;
+    padding: 10px;
+}
+
+table {
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+tr {
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+td {
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    border-radius: 30px
+}
+
+.buttonNumber {
+    background-color: rgb(84, 84, 84);
+    border: 0px;
+    font: 23px "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: aliceblue;
+    transition: font-size 3s, color 2s;
+
+}
+
+.buttonNumber:active {
+    background: rgb(124, 124, 124);
+    transition: .3s;
+}
+
+.buttonGroupAct {
+    background-color: rgb(255, 153, 0);
+    border: 0px;
+    font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: rgb(247, 247, 247);
+}
+
+.buttonGroupAct:active {
+    background-color: rgb(255, 209, 139);
+    transition: .3s;
+}
+
+.buttonGroupDelite {
+    background-color: rgb(213, 213, 213);
+    border: 0px;
+    font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: rgb(7, 7, 7);
+
+}
+
+.buttonGroupDelite:active {
+    background-color: rgb(242, 242, 242);
+    transition: .3s;
+}
+
+.textWindow {
+    background-color: rgb(0, 0, 0);
+    border: 0px;
+    width: 230px;
+    height: 40px;
+    font: 55px "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: aliceblue;
+    text-align: end;
+    padding: 10px;
+
+}
+
+button,
+button:active,
+button:focus {
+    outline: none;
+
+}

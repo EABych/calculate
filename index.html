@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="index.css" media="screen" rel="stylesheet" />
+    <script src="calculator.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <div class="main_conteiner">
+
+        <input type="text" class="textWindow" id="title1" value="0" maxlength="3" disabled>
+
+
+
+        <div class="buttonContainer">
+            <table class="buttonGroup" id="todoList">
+                <tr>
+                    <td>
+                        <button class="buttonGroupDelite" id="buttonCleanAll" onclick="cleanAll()" value="">AC</button>
+                    </td>
+                    <td>
+                        <button class="buttonGroupDelite" id="buttonClean" onclick="clean()" value="">C</button>
+                    </td>
+                    <td>
+                        <button class="buttonGroupDelite" id="buttonPercent" onclick="Percent()" value="">%</button>
+                    </td>
+                    <td>
+                        <button class="buttonGroupAct" id="buttonDivide" onclick="calcDivide()" value="/">/</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class='buttonNumber' id="button7" onclick="addTextToInput(this)" value="7">7</button>
+                    </td>
+                    <td>
+                        <button class='buttonNumber' id="button8" onclick="addTextToInput(this)" value="8">8</button>
+                    </td>
+                    <td>
+                        <button class='buttonNumber' id="button9" onclick="addTextToInput(this)" value="9">9</button>
+                    </td>
+                    <td>
+                        <button class="buttonGroupAct" id="buttonMultiply" onclick="calcMultiply()" value="*">x</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class='buttonNumber' id="button4" onclick="addTextToInput(this)" value="4">4</button>
+                    </td>
+                    <td>
+                        <button class='buttonNumber' id="button5" onclick="addTextToInput(this)" value="5">5</button>
+                    </td>
+                    <td>
+                        <button class='buttonNumber' id="button6" onclick="addTextToInput(this)" value="6">6</button>
+                    </td>
+                    <td>
+                        <button class="buttonGroupAct" id="buttonSubtraction" onclick="calcSubtraction()"
+                            value="-">-</button>
+                    </td>
+                    <td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class='buttonNumber' id="button1" onclick="addTextToInput(this)" value="1">1</button>
+                    </td>
+                    <td>
+                        <button class='buttonNumber' id="button2" onclick="addTextToInput(this)" value="2">2</button>
+                    </td>
+                    <td>
+                        <button class='buttonNumber' id="button3" onclick="addTextToInput(this)" value="3">3</button>
+                    </td>
+                    <td>
+                        <button class="buttonGroupAct" id="buttonAddition" onclick="calcSumm()" value="+">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class='buttonNumber' id="button0" onclick="addTextToInput(this)" value="0">0</button>
+                    </td>
+                    <td>
+                        <button class='buttonNumber' id="buttonChangeSign" onclick="ChangeSign()" value="">+/-</button>
+                    </td>
+                    <td>
+                        <button class='buttonNumber' id="buttonPoint" onclick="addTextToInputPoint(this)"
+                            value=".">,</button>
+                    </td>
+                    <td>
+                        <button class="buttonGroupAct" id="buttonResult" onclick="calcResult()" value="">=</button>
+                    </td>
+                </tr>
+
+
+
+
+
+
+            </table>
+
+        </div>
+    </div>
+</body>
+
+</html>
